@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="./img/rn.png" type="image/x-icon">
+</head>
+
+<body id='body'>
+
+    <div class="top_header">
+        <span class="img_logo">
+            <a href="https://github.com/KanishkVijaywargiya" target="_blank">
+                <img class="logo_img" src="./img/rn.png" alt="BlaceNova color pallette">
+            </a>
+            <p class="logo_name">BlaceNova Inc.&trade;</p>
+        </span>
+        <span class="header_center">Welcome to Registration Page</span>
+        <span class="right_header">Demo</span>
+    </div>
+
+
+    <div class="container">
+        <div class="head">
+            <h1>Student Registration Portal</h1>
+        </div>
+        <div class="avatar">
+            <a href="#">
+                <img src="./img/pic.png" alt="Skytsunami" />
+            </a>
+        </div>
+        <div style="margin: 30px; text-align: center;">
+            <span style=" font-size: 20px; font-weight: bold; color: #121212;">Please enter the following field</span>
+        </div>
+
+        <div class="content"></div>
+
+        <form id="xyz">
+            <div class="label">
+                <!-- <label for="name">Enter name: </label> -->
+                <input
+                    style="margin-bottom:10px; font-size: 20px; padding:5px; border-radius:5px; color: #121212; width: 280px;"
+                    type="text" id="name" placeholder="Enter name:" />
+            </div>
+
+            <div class="label">
+                <!-- <label for="dob">Select date of birth: </label> -->
+                <input
+                    style=" margin-bottom:10px;font-size: 20px; padding:5px; border-radius:5px; color: #121212; width: 280px;"
+                    type="date" id="dob" placeholder="Select Date of Birth" />
+            </div>
+
+            <div class="label">
+                <!-- <label for="branch">Enter branch: </label> -->
+                <input
+                    style=" margin-bottom:10px;font-size: 20px; padding:5px; border-radius:5px; color: #121212; width: 280px;"
+                    type="text" id="branch" placeholder="Enter branch" />
+            </div>
+
+            <div class="label">
+                <!-- <label for="semester">Select Semester: </label> -->
+                <input
+                    style=" margin-bottom:10px;font-size: 20px; padding:5px; border-radius:5px; color: #121212; width: 280px;"
+                    type="number" id="semester" max="8" min="0" placeholder="Select Semester" />
+            </div>
+
+            <div class="label">
+                <!-- <label for="doj">Select date of joining: </label> -->
+                <input
+                    style=" margin-bottom:10px;font-size: 20px; padding:5px; border-radius:5px; color: #121212; width: 280px;"
+                    type="date" id="doj" placeholder="Select date of joining:" />
+            </div>
+
+            <div class="label">
+                <!-- <label for="university">Enter University Name: </label> -->
+                <input
+                    style=" margin-bottom:10px;font-size: 20px; padding:5px; border-radius:5px; color: #121212; width: 280px;"
+                    type="text" id="university" placeholder="Enter University Name: " />
+            </div>
+
+            <div class="label">
+                <!-- <label for="mobile">Enter mobile number: </label> -->
+                <input
+                    style=" margin-bottom:10px;font-size: 20px; padding:5px; border-radius:5px; color: #121212; width: 280px;"
+                    type="text" id="mobile" placeholder="Enter mobile number:" />
+            </div>
+
+            <div class="label">
+                <!-- <label for="email_add">Enter email: </label> -->
+                <input
+                    style=" margin-bottom:10px;font-size: 20px; padding:5px; border-radius:5px; color: #121212; width: 280px;"
+                    type="email" id="email_add" placeholder="Enter email:" />
+            </div>
+        </form>
+        <button class="btn" onclick="validate()">Submit</button>
+        <p class="resultText">Result: <span id="result"></span></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- footer -->
+    <div class="below_footer">
+        <p class="footer_name">&copy; 2020 BlaceNova Inc.&trade; Login & Registration Form.</p>
+    </div>
+
+    <script src="func.js"></script>
+</body>
+
+</html>
